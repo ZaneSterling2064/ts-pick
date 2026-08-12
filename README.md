@@ -1,9 +1,11 @@
 # Object key picker
 
-Copy selected own properties into a typed object. No dependencies, no service to run — just the standard library.
+Copy selected own properties into a typed object.
+
+TypeScript Pick uses only the typescript standard library; there is no service or dependency to install.
 
 ```
 pick.ts
 ```
 
-Check the test file next to the source for usage examples.
+Run the TypeScript Pick test next to the implementation for concrete examples.
