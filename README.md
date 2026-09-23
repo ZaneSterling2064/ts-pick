@@ -1,11 +1,15 @@
 # Object key picker
 
-You have a massive object. You only need three specific properties. Copying them manually is tedious. It often loses type safety too. We can do better. This utility copies selected own properties into a strictly typed object.
+Extract specific properties into a strictly typed object. Think of it like a filter: the raw object goes in, and a strictly typed subset comes out. You get exactly what you ask for, with full type safety.
 
-It relies entirely on the TypeScript standard library. Zero external dependencies. No background services to configure. Just pure type manipulation.
+This utility relies purely on the TypeScript standard library, so there are zero external services or extra dependencies to install. It just works out of the box.
 
 ```
 pick.ts
 ```
+Check the test file located next to the implementation. It walks through concrete usage patterns and shows you exactly how the types resolve in practice.
 
-Want to see the before and after? Check out the test file sitting right next to the implementation. It provides concrete examples showing exactly how the types transform.
+## Common questions
+
+**Do I need to install an SDK first?**  
+Nope. `pick.test.ts` communicates over plain HTTP. That keeps the setup tiny, which is why you just need `npx tsx` and a single environment variable to get going. That is the complete dependency list for this picker.
